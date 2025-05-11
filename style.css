@@ -40,6 +40,46 @@ body{
     font-weight: 300;
 }
 
+
+
+/* Sale content */
+.sale{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.sale-content .main-title{
+    font-size: 5em;
+    color: red;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.sale-content .sub-title-1{
+font-size: 1.3em;
+color: red;
+
+}
+
+.sale-content .sub-title-2{
+font-size: 2.5em;
+font-weight: 700;
+
+}
+
+
+    .sale-content img{
+        width: 100%;
+    }
+
+
+    /* The following media query adjusts the styles for screens between 570px and 900px. */
+
 @media screen and (max-width: 570px) {
     .banner{
         height: 300px;
@@ -50,12 +90,27 @@ body{
     .banner h2{
         font-size: 20px;
     }
+
+    .sale-content .main-title{
+    font-size: 3em;
+    
+}
+
+.sale-content .sub-title-1{
+font-size: 0.8em;
+
+}
+
+.sale-content .sub-title-2{
+font-size: 1.8em;
+
+}
+    
 }
 
 
 
 
-/* The following media query adjusts the styles for screens between 570px and 900px. */
 
 @media screen and  (max-width: 900px) and (min-width: 570px) {
     .banner{
