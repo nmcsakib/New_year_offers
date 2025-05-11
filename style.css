@@ -1,0 +1,70 @@
+
+/* The CSS file also imports Google Fonts for typography. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1320px;
+    margin: auto;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+    
+}
+
+.banner{
+     font-family: "Merriweather", serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #000000d0, transparent), url("/images/BannerImage.png");
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner .main-title{
+    font-size: 64px;
+    width: 70%;
+    margin: 0 auto;
+}
+.banner h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 570px) {
+    .banner{
+        height: 300px;
+    }
+    .banner .main-title{
+        font-size: 32px;
+    }
+    .banner h2{
+        font-size: 20px;
+    }
+}
+
+
+
+
+/* The following media query adjusts the styles for screens between 570px and 900px. */
+
+@media screen and  (max-width: 900px) and (min-width: 570px) {
+    .banner{
+        height: 400px;
+    }
+    .banner .main-title{
+        font-size: 50px;
+    }
+    .banner h2{
+        font-size: 25px;
+    }
+}
