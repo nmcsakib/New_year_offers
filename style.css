@@ -19,20 +19,33 @@ body{
     
 }
 
-.banner, .invitation-card, .venue-card{
-     font-family: "Merriweather", serif;
+.common-card{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
     width: 100%;
-    background-image: linear-gradient(to bottom, #000000d0, transparent), url("/images/BannerImage.png");
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+    gap: 50px;
+
+}
+
+ .details{
+        font-size: 15px;
+        font-weight: 300;
+        color: #070211;
+        opacity: 0.6;
+
+    }
+
+.banner{
+    background-image: linear-gradient(to bottom, #000000d0, transparent), url("/images/BannerImage.png");
+    font-family: "Merriweather", serif;
 }
 
 .banner .main-title{
@@ -49,12 +62,13 @@ body{
 
 /* Sale content */
 .sale{
-    display: flex;
+      display: flex;
     font-family: "Inter", sans-serif;
     justify-content: center;
     text-align:center;
     align-items: center;
     text-transform: uppercase;
+
 }
 .sale-content .main-title{
     font-size: 5em;
@@ -73,6 +87,7 @@ color: red;
 .sale-content .sub-title-2{
 font-size: 2.5em;
 font-weight: 700;
+color: black;
 
 }
 
@@ -101,11 +116,11 @@ font-weight: 700;
         width: 50%;
     }
 
-    .invitation-card .card-content .details{
-        font-size: 16px;
-        font-weight: 300;
+     .invitation-card .details{
         margin-bottom: 20px;
         width: 70%;
+        color: white;
+        opacity: 1;
 
     }
 
@@ -130,13 +145,50 @@ font-weight: 700;
         color: red;
     }
 
+    .promotion-card{
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        color: black;
+        background-image: none;
+        text-align: left;
+        flex: 1;
+
+    }
+    .promotion-card .main-title{
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0;
+        font-family: "Merriweather", sans-serif;
+    }
+
+    .promotion-card .sub-title{
+        font-size: 20px;
+        font-weight: 500;
+        color: red;
+        margin: 0;
+    }
+
+    .year{
+        color: red;
+        font-size: 30px;
+        margin: 0;
+    }
+
+ #ellipse-pic{
+    border: 10px solid red;
+    border-radius: 50%;
+    padding: 20px;
+ }
+
+    
+
 
 
 
     /* The following media query adjusts the styles for screens between 570px and 900px. */
 
 @media screen and (max-width: 570px) {
-    .banner, .invitation-card{
+    .common-card{
         height: 300px;
     }
     .banner-content .main-title, .invitation-card .card-content .main-title{
@@ -160,7 +212,7 @@ font-size: 0.8em;
 font-size: 1.8em;
 }
 
-    .invitation-card .card-content .details{
+.details{
         font-size: 14px;
         font-weight: 300;
         margin-bottom: 20px;
@@ -170,6 +222,22 @@ font-size: 1.8em;
     text-overflow: ellipsis;
     }
 
+    .venue-card{
+        font-size: 16px;
+        height: 200px;
+    }
+
+     .promotion-card{
+        flex-wrap: wrap;
+    }
+    .promotion-card .details{
+        white-space: wrap;
+
+    }
+
+    #ellipse-pic img{
+        width: 150px;
+    }
    
     
 }
@@ -189,4 +257,8 @@ font-size: 1.8em;
     .banner h2{
         font-size: 25px;
     }
+    .promotion-card{
+        flex-wrap: wrap;
+    }
+   
 }
