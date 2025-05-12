@@ -9,12 +9,17 @@ body{
     margin: auto;
 }
 .container{
-    width: 90%;
+    width: 80%;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     
 }
 
-.banner, .invitation-card{
+.banner, .invitation-card, .venue-card{
      font-family: "Merriweather", serif;
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,7 +54,6 @@ body{
     justify-content: center;
     text-align:center;
     align-items: center;
-    margin: 50px auto;
     text-transform: uppercase;
 }
 .sale-content .main-title{
@@ -113,6 +117,18 @@ font-weight: 700;
         font-weight: 700;
     }
 
+
+    .venue-card{
+        background-image: linear-gradient(to bottom, #ff00004b, transparent);
+        height: 300px;
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: black;
+    }
+    .red{
+        color: red;
+    }
 
 
 
